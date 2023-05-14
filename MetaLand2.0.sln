@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaLand.DataLayer", "DataLayer\MetaLand.DataLayer.csproj", "{A720B172-3673-4C61-A91F-BD8E816CFD54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaLand.UI", "MetaLand.UI\MetaLand.UI.csproj", "{51C6292E-29D6-4A86-9B96-0E3EC85CB239}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A720B172-3673-4C61-A91F-BD8E816CFD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A720B172-3673-4C61-A91F-BD8E816CFD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A720B172-3673-4C61-A91F-BD8E816CFD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A720B172-3673-4C61-A91F-BD8E816CFD54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C6292E-29D6-4A86-9B96-0E3EC85CB239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C6292E-29D6-4A86-9B96-0E3EC85CB239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C6292E-29D6-4A86-9B96-0E3EC85CB239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C6292E-29D6-4A86-9B96-0E3EC85CB239}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF634835-33FA-4B6A-BAF6-F5D5A630DEBA}
+	EndGlobalSection
+EndGlobal
