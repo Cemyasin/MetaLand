@@ -26,14 +26,14 @@ namespace MetaLand.UI
         {
         Users user = new Users
             {
-                Kullanici_adi = txtNickName.Text,
-                İsim = txtFirstName.Text,
-                Soyisim = txtLastName.Text ,
-                Sifre = txtPassword.Text ,
-                Yemek = 250 ,
-                Esya = 250 ,
-                Para = 500 ,
-                Kayit_tarihi = DateTime.Now ,
+                Kullanici_adi   = txtNickName.Text,
+                İsim            = txtFirstName.Text,
+                Soyisim         = txtLastName.Text ,
+                Sifre           = txtPassword.Text ,
+                Yemek           = 250 ,
+                Esya            = 250 ,
+                Para            = 500 ,
+                Kayit_tarihi    = DateTime.Now ,
             };
             Debug.WriteLine($"kullanıcı adı: {txtNickName.Text} password: {txtPassword.Text}");
             Program.context.Users.Add(user);

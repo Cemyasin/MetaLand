@@ -32,16 +32,18 @@
             lblInfo = new Label();
             label2 = new Label();
             btnIsletme = new Button();
+            btnProfil = new Button();
             SuspendLayout();
             // 
             // btnIsIlani
             // 
+            btnIsIlani.BackColor = Color.White;
             btnIsIlani.Location = new Point(893, 135);
             btnIsIlani.Name = "btnIsIlani";
             btnIsIlani.Size = new Size(130, 49);
             btnIsIlani.TabIndex = 0;
             btnIsIlani.Text = "İş İlanları";
-            btnIsIlani.UseVisualStyleBackColor = true;
+            btnIsIlani.UseVisualStyleBackColor = false;
             btnIsIlani.Click += btnIsIlani_Click;
             // 
             // lblInfo
@@ -73,12 +75,24 @@
             btnIsletme.TabIndex = 3;
             btnIsletme.Text = "İşletme ";
             btnIsletme.UseVisualStyleBackColor = true;
+            btnIsletme.Click += btnIsletme_Click;
+            // 
+            // btnProfil
+            // 
+            btnProfil.Location = new Point(868, 13);
+            btnProfil.Name = "btnProfil";
+            btnProfil.Size = new Size(59, 44);
+            btnProfil.TabIndex = 4;
+            btnProfil.Text = "Profil";
+            btnProfil.UseVisualStyleBackColor = true;
+            btnProfil.Click += btnProfil_Click;
             // 
             // FormGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1100, 610);
+            Controls.Add(btnProfil);
             Controls.Add(btnIsletme);
             Controls.Add(label2);
             Controls.Add(lblInfo);
@@ -86,6 +100,7 @@
             Name = "FormGame";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += FormGame_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -96,5 +111,6 @@
         private Label lblInfo;
         private Label label2;
         private Button btnIsletme;
+        private Button btnProfil;
     }
 }

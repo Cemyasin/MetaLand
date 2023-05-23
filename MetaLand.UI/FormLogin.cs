@@ -24,16 +24,16 @@ namespace MetaLand.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-         //   Debug.WriteLine($"kullanıcı adı: {txtNickName.Text } password: {txtPassword.Text}");
+            //   Debug.WriteLine($"kullanıcı adı: {txtNickName.Text } password: {txtPassword.Text}");
             Program.context = new MetaLandContext();
-            List<Users> l=  Program.context.Users.ToList();
+            List<Users> l = Program.context.Users.ToList();
             foreach (Users u in l)
             {
                 if (u.Kullanici_adi.ToLower().ToString().Equals(txtNickName.Text.ToString()))
                     if (u.Sifre.Equals(txtPassword.Text))
                     {
-                        user=u;
-                       // Debug.WriteLine($"{u.Kullanici_adi} giriş yaptii..");
+                        user = u;
+                        // Debug.WriteLine($"{u.Kullanici_adi} giriş yaptii..");
                         onay = true;
                         break;
                     }
@@ -45,7 +45,7 @@ namespace MetaLand.UI
             }
             else
                 MessageBox.Show("Kullanıcı adı veya şifre hatalı!!!");
-            
+
         }
     }
 }

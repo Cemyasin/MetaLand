@@ -14,7 +14,7 @@ namespace MetaLand.UI.Models
         public int          isletme_id                  { get; set;}
         public int          calisma_gun_sayisi          { get; set; }
         public byte         calisma_saatleri            { get; set; }
-        public DateTime     baslangic_tarhi             { get; set; }
-        public DateTime     cikis_tarhi                 { get;set; }
+        public DateTime     baslangic_tarihi            { get; set; }
+        public DateTime     cikis_tarihi                { get;set; }
     }
 }

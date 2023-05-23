@@ -65,3 +65,14 @@ C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.
 C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.pdb
 C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.genruntimeconfig.cache
 C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\ref\MetaLand.UI.dll
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormProfil.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormIsletme.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormEmlak.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormArsa.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormEmlakTeklif.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormTeklifler.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormTeklifKabul.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormIsBasvuru.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormBasvuruKabul.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormBasvuruListe.resources
+C:\Users\uzumc\OneDrive\Masaüstü\projects\Vs-C# Projects\MetaLand2.0\MetaLand.UI\obj\Debug\net6.0-windows\MetaLand.UI.FormBenimİsletmem.resources

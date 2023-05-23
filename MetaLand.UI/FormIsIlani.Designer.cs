@@ -28,63 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listView1 = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // listView1
+            // dataGridView1
             // 
-            listView1.CheckBoxes = true;
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
-            listView1.GridLines = true;
-            listView1.Location = new Point(31, 32);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(401, 480);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "İşletme";
-            columnHeader1.Width = 80;
-            // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "Sahibi";
-            columnHeader2.Width = 120;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "Maaş";
-            columnHeader3.Width = 80;
-            // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "Çalışma Saatleri";
-            columnHeader4.Width = 120;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(47, 42);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(457, 491);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
             // FormIsIlani
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(570, 589);
-            Controls.Add(listView1);
+            Controls.Add(dataGridView1);
             Name = "FormIsIlani";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormIsIlani";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListView listView1;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
+        private DataGridView dataGridView1;
     }
 }

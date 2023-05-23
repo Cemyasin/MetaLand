@@ -31,6 +31,7 @@
             txtNickName = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // txtNickName
@@ -46,6 +47,7 @@
             // 
             txtPassword.Location = new Point(91, 200);
             txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "Şifre";
             txtPassword.Size = new Size(273, 23);
             txtPassword.TabIndex = 1;
@@ -61,11 +63,22 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Matura MT Script Capitals", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(61, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(335, 25);
+            label1.TabIndex = 3;
+            label1.Text = "Welcome Back METALAND";
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(442, 450);
+            Controls.Add(label1);
             Controls.Add(btnLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtNickName);
@@ -81,5 +94,6 @@
         private TextBox txtNickName;
         private TextBox txtPassword;
         private Button btnLogin;
+        private Label label1;
     }
 }

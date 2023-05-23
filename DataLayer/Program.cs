@@ -82,7 +82,7 @@ namespace DataLayer
           //  {
           //
           //     alan_id = 1,
-          //     isletme_sahibi             =1,
+          //     isletme_sahibi_id             =1,
           //     isletme_turu               =3,
           //     kullanici_isletme_ucreti   =0,
           //     yonetici_isletme_ucreti    =0,

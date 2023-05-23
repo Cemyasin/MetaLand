@@ -11,9 +11,10 @@ namespace MetaLand.UI.Models
     {
         [Key]
         public int      id                  { get; set; }
-        public int      isletme_id          { get; set; }
-        public int      isveren_id          { get;set; }
         public int      maas                { get; set; }
-        public byte     vardiya             { get;set; }
+        public int      sure                { get; set; }
+        public int      isletme_id          { get; set; }
+        public int      isveren_id          { get;set;  }
+        public byte     vardiya             { get;set;  }
     }
 }

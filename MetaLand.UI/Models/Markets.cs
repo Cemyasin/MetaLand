@@ -11,6 +11,6 @@ namespace MetaLand.UI.Models
     {
         [Key]
         public int      isletme_id              { get; set; }
-        public int      yiycecek_ucreti         { get; set; }
+        public int      yiyecek_ucreti         { get; set; }
     }
 }

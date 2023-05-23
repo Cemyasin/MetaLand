@@ -45,9 +45,11 @@
             txtFood = new TextBox();
             txtPassword = new TextBox();
             button1 = new Button();
-            button2 = new Button();
-            textBox1 = new TextBox();
+            btnZaman = new Button();
+            txtDate = new TextBox();
             labelDate = new Label();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // listView1
@@ -101,7 +103,7 @@
             // 
             // txtNickName
             // 
-            txtNickName.Location = new Point(43, 44);
+            txtNickName.Location = new Point(43, 14);
             txtNickName.Name = "txtNickName";
             txtNickName.PlaceholderText = "Kullanıcı Adı";
             txtNickName.Size = new Size(151, 23);
@@ -109,7 +111,7 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(43, 73);
+            txtName.Location = new Point(43, 43);
             txtName.Name = "txtName";
             txtName.PlaceholderText = "İsim";
             txtName.Size = new Size(151, 23);
@@ -117,7 +119,7 @@
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(43, 102);
+            txtLastName.Location = new Point(43, 72);
             txtLastName.Name = "txtLastName";
             txtLastName.PlaceholderText = "Soyisim";
             txtLastName.Size = new Size(151, 23);
@@ -125,80 +127,95 @@
             // 
             // txtMoney
             // 
-            txtMoney.Location = new Point(228, 44);
+            txtMoney.Location = new Point(228, 14);
             txtMoney.Name = "txtMoney";
             txtMoney.PlaceholderText = "Para";
             txtMoney.Size = new Size(151, 23);
             txtMoney.TabIndex = 4;
+            txtMoney.KeyPress += txtMoney_KeyPress;
             // 
             // txtItem
             // 
-            txtItem.Location = new Point(228, 73);
+            txtItem.Location = new Point(228, 43);
             txtItem.Name = "txtItem";
             txtItem.PlaceholderText = "Eşya";
             txtItem.Size = new Size(151, 23);
             txtItem.TabIndex = 5;
+            txtItem.KeyPress += txtItem_KeyPress;
             // 
             // txtFood
             // 
-            txtFood.Location = new Point(228, 102);
+            txtFood.Location = new Point(228, 72);
             txtFood.Name = "txtFood";
             txtFood.PlaceholderText = "Yiyecek";
             txtFood.Size = new Size(151, 23);
             txtFood.TabIndex = 6;
+            txtFood.KeyPress += txtFood_KeyPress;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(43, 131);
+            txtPassword.Location = new Point(43, 101);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Şifre";
             txtPassword.Size = new Size(151, 23);
             txtPassword.TabIndex = 7;
             // 
-            // btnIsIlani
+            // button1
             // 
-            button1.Location = new Point(228, 131);
-            button1.Name = "btnIsIlani";
-            button1.Size = new Size(151, 32);
+            button1.Location = new Point(228, 101);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 24);
             button1.TabIndex = 8;
-            button1.Text = "Ekle/Değiştir";
+            button1.Text = "Kaydet";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // btnIsletme
+            // btnZaman
             // 
-            button2.Location = new Point(1024, 95);
-            button2.Name = "btnIsletme";
-            button2.Size = new Size(155, 30);
-            button2.TabIndex = 9;
-            button2.Text = "Zamanı İleri Al";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnZaman.Location = new Point(670, 95);
+            btnZaman.Name = "btnZaman";
+            btnZaman.Size = new Size(155, 30);
+            btnZaman.TabIndex = 9;
+            btnZaman.Text = "Zamanı İleri Al";
+            btnZaman.UseVisualStyleBackColor = true;
+            btnZaman.Click += btnZaman_Click;
             // 
-            // textBox1
+            // txtDate
             // 
-            textBox1.Location = new Point(1024, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 23);
-            textBox1.TabIndex = 10;
+            txtDate.Location = new Point(670, 59);
+            txtDate.Name = "txtDate";
+            txtDate.Size = new Size(155, 23);
+            txtDate.TabIndex = 10;
             // 
             // labelDate
             // 
             labelDate.Font = new Font("Palatino Linotype", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelDate.Location = new Point(1024, 9);
+            labelDate.Location = new Point(670, 9);
             labelDate.Name = "labelDate";
             labelDate.Size = new Size(155, 34);
             labelDate.TabIndex = 11;
             labelDate.Text = "Date:";
+            labelDate.TextAlign = ContentAlignment.TopRight;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(43, 231);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(721, 345);
+            dataGridView1.TabIndex = 12;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1191, 640);
+            ClientSize = new Size(837, 586);
+            Controls.Add(dataGridView1);
             Controls.Add(labelDate);
-            Controls.Add(textBox1);
-            Controls.Add(button2);
+            Controls.Add(txtDate);
+            Controls.Add(btnZaman);
             Controls.Add(button1);
             Controls.Add(txtPassword);
             Controls.Add(txtFood);
@@ -209,10 +226,14 @@
             Controls.Add(txtNickName);
             Controls.Add(listView1);
             Name = "FormAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAdmin";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
+
 
         #endregion
 
@@ -233,8 +254,9 @@
         private TextBox txtFood;
         private TextBox txtPassword;
         private Button button1;
-        private Button button2;
-        private TextBox textBox1;
+        private Button btnZaman;
+        private TextBox txtDate;
         private Label labelDate;
+        private DataGridView dataGridView1;
     }
 }

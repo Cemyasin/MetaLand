@@ -10,7 +10,7 @@ namespace MetaLand.UI.Models
     internal class Alan
     {
         [Key]
-        public int  id                      {  get; set; }
-        public int alan_sahibi_id           { get; set;  }
+        public int          id                      {  get; set; }
+        public int          alan_sahibi_id          { get; set;  }
     }
 }

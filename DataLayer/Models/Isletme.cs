@@ -12,7 +12,7 @@ namespace MetaLand.DataLayer.Models
         [Key]
         public int          id                                  { get; set; }
         public int          alan_id                             { get; set; }
-        public int          isletme_sahibi                      { get; set; }         
+        public int          isletme_sahibi_id                    { get; set; }         
         public byte         isletme_turu                        { get; set; }               //tinyint 
         public int          kullanici_isletme_ucreti            { get; set; }
         public int          yonetici_isletme_ucreti             { get; set; }

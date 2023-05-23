@@ -12,6 +12,6 @@ namespace MetaLand.UI.Models
         [Key]
         public int      id                          { get; set; }
         public int      isletme_id                  { get; set; } 
-        public double   emlak_komisyon_orani        { get; set; }
+        public double   emlak_komisyonu        { get; set; }
     }
 }

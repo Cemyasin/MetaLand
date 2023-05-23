@@ -14,8 +14,10 @@ namespace MetaLand.UI
 {
     public partial class FormIsIlani : Form
     {
-        public FormIsIlani()
+        private Users user;
+        public FormIsIlani(Users user)
         {
+            this.user = user;
             InitializeComponent();
             ilanListele();
         }
@@ -33,27 +35,26 @@ namespace MetaLand.UI
                         select new
                         {
                             i.id,
-                            it.isletme_adi,
-                            u.İsim,
-                            u.Soyisim,
-                            i.maas,
-                            v.calisma_saati,
+                            İşletme = it.isletme_adi,
+                            Sahibi = u.İsim + " " + u.Soyisim,
+                            Maaş = i.maas,
+                            ÇalışmaSaati = v.calisma_saati,
                         };
             var result = query.ToList();
-            foreach (var item in result)
-            {
-                Debug.WriteLine($"id: {item.id} işletme adı: {item.isletme_adi} işveren adı:{item.İsim} {item.Soyisim} maas: {item.maas} vardiya: {item.calisma_saati}");
-                string[] items =
-                {
-                    item.isletme_adi.ToString(),
-                    item.İsim.ToString()+" "+item.Soyisim.ToString(),
-                    item.maas.ToString(),
-                    item.calisma_saati,
-                };
-                ListViewItem listItem = new ListViewItem(items);
-                listView1.Items.Add(listItem);
-            }
+            dataGridView1.DataSource = result;
 
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
+
+                FormIsBasvuru formIsBasvuru = new FormIsBasvuru(user,selectedRow);
+                formIsBasvuru.ShowDialog(this);
+            }
         }
     }
 }

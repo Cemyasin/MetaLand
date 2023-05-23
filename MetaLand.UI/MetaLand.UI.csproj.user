@@ -1,2 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="FormArsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBasvuruKabul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBasvuruListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormBenimİsletmem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEmlak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEmlakTeklif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormIsBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormIsletme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTeklifKabul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormTeklifler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

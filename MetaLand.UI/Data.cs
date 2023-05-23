@@ -9,7 +9,7 @@ namespace MetaLand.UI
     {
         public static void Main2(string[] args)
         {
-           MetaLandContext context = new MetaLandContext();
+          //MetaLandContext context = new MetaLandContext();
 
           // MetaLand.GUI.Program.Main();
           //  context.Emlak.Add(new Emlak
@@ -105,6 +105,8 @@ namespace MetaLand.UI
         public DbSet<IsIlani>       IsIlani                 { get; set; }
         public DbSet<Employee>      Employee                { get; set; }
         public DbSet<EmlakIslem>    EmlakIslem              { get; set; }
+        public DbSet<IsBasvurusu>   IsBasvurusu             { get; set; }
+        public DbSet<EmlakTeklif>   EmlakTeklif             { get; set; }
         public DbSet<IsletmeTuru>   IsletmeTuru             { get; set; }
         public DbSet<GameSettings>  GameSettings            { get; set; }
 
